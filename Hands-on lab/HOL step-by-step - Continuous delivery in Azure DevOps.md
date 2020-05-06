@@ -140,7 +140,7 @@ Since this solution is based on Azure Platform-as-a-Service (PaaS) technology, i
     },
      "DeploymentID": {
       "type": "string"
-    }
+    },
     ```
 
     After adding the code, it will look like this:
@@ -207,6 +207,9 @@ Since this solution is based on Azure Platform-as-a-Service (PaaS) technology, i
                     "test",
                     "production"
                 ]
+            },
+            "DeploymentID": {
+            "type": "string"
             },
             "siteName": {
                 "type": "string",
@@ -311,12 +314,14 @@ Since this solution is based on Azure Platform-as-a-Service (PaaS) technology, i
                 }
             }
         },
-        "variables": {
-            "webAppName": "[concat(parameters('siteName'), '-', parameters('environment'), '-', uniqueString(resourceGroup().id))]",
-            "databaseName": "[concat(parameters('siteName'), 'db', parameters('environment'), uniqueString(resourceGroup().id))]",
-            "serverName": "[concat(parameters('siteName'), 'pgserver', parameters('environment'), uniqueString(resourceGroup().id))]",
-            "hostingPlanName": "[concat(parameters('siteName'), 'serviceplan', uniqueString(resourceGroup().id))]"
+         
+         "variables": {
+          "webAppName": "[concat(parameters('siteName'), '-', parameters('environment'), '-', parameters('DeploymentID'))]",
+          "databaseName": "[concat(parameters('siteName'), 'db', parameters('environment'), parameters('DeploymentID'))]",
+          "serverName": "[concat(parameters('siteName'), 'pgserver', parameters('environment'), parameters('DeploymentID'))]",
+          "hostingPlanName": "[concat(parameters('siteName'), 'serviceplan', parameters('DeploymentID'))]"
         },
+        
         "resources": [
             {
                 "apiVersion": "2016-09-01",
