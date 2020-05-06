@@ -425,7 +425,6 @@ Now that the template file has been uploaded, we'll deploy it several times to c
     read resourceGroupName &&
     echo "Enter the location (i.e. westus, centralus, eastus):" &&
     read location &&
-    az group create --name $resourceGroupName --location "$location" &&
     az group deployment create --resource-group $resourceGroupName --template-file "$HOME/studentfiles/armtemplate/azuredeploy.json"
     ```
     
@@ -467,7 +466,7 @@ Now that the template file has been uploaded, we'll deploy it several times to c
 
     ![The Azure Cloud Shell has succeeded in executing the template based on the parameters we provided.](images/stepbystep/media/image50.png "Azure Cloud Shell")
 
-    >**Note**: The above steps were used to provision the *dev* environment. Most of these same steps will be repeated for the *test* and *production* environments below.
+    >**Note**: The above steps were used to provision the ***dev*** environment. Most of these same steps will be repeated for the ***test*** and ***production*** environments below.
 
 ### Task 5: Create the test environment and deploy the template to Azure
 
