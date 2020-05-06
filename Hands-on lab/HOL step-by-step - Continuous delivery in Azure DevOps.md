@@ -606,6 +606,8 @@ In this Task, you will configure the Azure DevOps Git repository. You will confi
     git commit -m "adding files"
     ```
 
+    >**Note**: If the *Azure Cloud Shell* prompt for **password** fill it with **PAT** token and press **Enter**
+
 14. Push the changes up to the Azure DevOps repository with the following command:
 
     ```
