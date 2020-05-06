@@ -139,7 +139,7 @@ Since this solution is based on Azure Platform-as-a-Service (PaaS) technology, i
         ]
     },
      "DeploymentID": {
-      "type": "string"
+        "type": "string"
     },
     ```
 
@@ -209,7 +209,7 @@ Since this solution is based on Azure Platform-as-a-Service (PaaS) technology, i
                 ]
             },
             "DeploymentID": {
-            "type": "string"
+               "type": "string"
             },
             "siteName": {
                 "type": "string",
