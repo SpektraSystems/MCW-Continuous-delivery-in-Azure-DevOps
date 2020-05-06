@@ -58,6 +58,15 @@ In this lab, you will configure a developer environment and download the require
 1.  In a web browser, navigate to https://shell.azure.com. Alternatively, from the Azure web portal, launch the **Azure Cloud Shell**. It has common Azure tools preinstalled and configured to use with your account.
 
     ![This is a screenshot of an icon used to launch the Azure Cloud Shell from the Azure Portal.](images/Setup/image3.png "Azure Cloud Shell launch icon")
+    
+2.  After log in to **Azure Cloud Shell** select the **Bash** option from the **Welcome to Azure Cloud shell** dialog box and now you will see a **You have no storage mounted box** and click the option for **Show advanced settings**.
+
+ 3.  Select **Create new** under **Storage account** and provide values as below:
+ 
+      - **Storage account** : **storageDeployementid**
+      - **File Share** : **blob**
+      
+  >**Note**: Storage account name should be always unique, Deployement Id can received from **Environment Details** tab     
 
 2.  From inside the Azure Cloud Shell type these commands to configure Git:
 
