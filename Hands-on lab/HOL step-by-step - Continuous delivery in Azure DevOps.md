@@ -620,7 +620,7 @@ In this Task, you will configure the Azure DevOps Git repository. You will confi
 
 16. Expand the *ClientApp* directory. Choose the **package.json** file.
 
-17. On line 27, change the value representing the version of the *rxjs* dependency, from *^6.0.0* to **6.0.0** (without the '^' character).
+17. On line 27, change the value representing the version of the *rxjs* dependency, from *^6.0.0* to **6.0.0** (without the '^' character) by clicking the **Edit** button on the right top corner of the window and make the necessary changes and click on the **Commit** button.
 
     ![The content of the package.json file is shown.](images/stepbystep/media/image138.png "Change rxjs dependency value to 6.0.0")
 
