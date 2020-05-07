@@ -1199,7 +1199,7 @@ In the tasks below, you will make changes directly through the Azure DevOps web 
 
     ![On the screen, Reviewers is highlighted.](images/stepbystep/media/image113.png "New Pull Request page")
 
-3. Select the **Create** button to submit the pull request and select **Set auto-Complete** option and select *Set auto-Complete*
+3. Select the **Create** button to submit the pull request and select **Set auto-Complete** option and click *Set auto-Complete*
 
 ### Task 5: Approve and complete a pull request
 
