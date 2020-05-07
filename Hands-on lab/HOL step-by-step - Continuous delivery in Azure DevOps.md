@@ -151,7 +151,7 @@ Since this solution is based on Azure Platform-as-a-Service (PaaS) technology, i
 
     >**Note**: The **environment** parameter will be used to generate environment specific names for our web app.
     
-3.  Locate the variable block of the**azuredeploy.json** and update with the following codes below:
+3.  Locate the variable block of the **azuredeploy.json** and update with the following codes below:
 
    ``` 
     "variables": {
