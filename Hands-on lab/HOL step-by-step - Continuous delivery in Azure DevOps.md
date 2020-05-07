@@ -145,7 +145,7 @@ Since this solution is based on Azure Platform-as-a-Service (PaaS) technology, i
 
     After adding the code, it will look like this:
 
-    ![This is a screenshot of the code pasted inside the of the "parameters" object.](images/stepbystep/media/image24.png "Pasted block of JSON code")
+    ![This is a screenshot of the code pasted inside the of the "parameters" object.](images/image4.png)
 
     Save the file.
 
