@@ -506,7 +506,7 @@ The following steps are very similar to what was done in the previous task with 
 
     >**Note**: The specific names of the resources will be slightly different than what you see in the screenshot based on the unique identities assigned.
 
-    ![The Azure Portal is showing all the deployed resources for the resource group we have been using.](images/stepbystep/media/image51.png "Azure Cloud Shell")
+    ![The Azure Portal is showing all the deployed resources for the resource group we have been using.](images/image10.png)
 
 ## Exercise 2: Create Azure DevOps project and Git Repository
 
