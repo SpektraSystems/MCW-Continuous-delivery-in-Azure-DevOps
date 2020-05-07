@@ -461,14 +461,16 @@ Now that the template file has been uploaded, we'll deploy it several times to c
 3.  Next, we're prompted to enter an Azure region (location) where we want to deploy our resources to (i.e. westus, centralus, eastus). 
     
     Enter the name of an Azure region and then press **Enter**.
-   
+    
 4.  Next, we're asked to enter a choice for environments we want to deploy to. The template will use our choice to concatenate the name of the environment with the name of the resource during provisioning. 
     
     For this first run, select the *dev* environment by entering **1** and then pressing **Enter**.
     
     ![In the Azure Cloud Shell window, we are prompted for the environment we want to deploy to.](images/stepbystep/media/image46.png "Azure Cloud Shell") 
-
-5.  Next, we're asked to supply an administrator login (username) for the PostgreSQL server and database. This will be the username credential you would need to enter to connect to your newly created database. 
+    
+ 5.  Then it will ask for the string value for the **DeployementID** and give the value of the DeploymentID from the **Environmet details** Tab.
+   
+6.  Next, we're asked to supply an administrator login (username) for the PostgreSQL server and database. This will be the username credential you would need to enter to connect to your newly created database. 
     
     Enter a value for the *administratorLogin* (e.g. **azureuser**) and then press **Enter**.
 
