@@ -145,7 +145,7 @@ Since this solution is based on Azure Platform-as-a-Service (PaaS) technology, i
 
     After adding the code, it will look like this:
 
-    ![This is a screenshot of the code pasted inside the of the "parameters" object.](images/image4.png)
+    ![This is a screenshot of the code pasted inside the of the "parameters" object.](images/image5.png)
 
     Save the file.
 
@@ -454,7 +454,7 @@ Now that the template file has been uploaded, we'll deploy it several times to c
 
     >**Note**: If you've extracted the student files in a different directory than the one indicated in 'Before the hands-on lab' Task 2.2, you will get an error similar to *'[Errno 2] No such file or directory: '/home/username/studentfiles/armtemplate/azuredeploy.json'*. In this case, you should replace $HOME/studentfiles/armtemplate with the path of the directory you chose.
 
-    ![In the Azure Cloud Shell window, the command has been entered is we are prompted for the name of the resource group we want to deploy to.](images/stepbystep/media/image44.png "Azure Cloud Shell window")
+    ![In the Azure Cloud Shell window, the command has been entered is we are prompted for the name of the resource group we want to deploy to.](images/image8.png)
 
 2.  Enter the name of a resource group you want to deploy the resources to (i.e. TailSpinToysRG). If it does not already exist, the template will create it. Then, press **Enter**.
 
