@@ -809,7 +809,7 @@ The *pool* section specifies which pool to use for a job of the pipeline. It als
 
 13. The new *azure-pipelines.yml* file will automatically be added to the root of your TailspinToys repository. This is done through a git commit that Azure DevOps facilitates. You are then asked to enter a commit description. By default, it will be populated for you. Once again, select the **Save and run** button at the bottom of the screen.
 
-    ![A screen that shows the commit of azure-pipelines.yml. The Save and run button is highlighted.](images/stepbystep/media/image74.png "Save and run")   
+    ![A screen that shows the commit of azure-pipelines.yml. The Save and run button is highlighted.](images/image11.png)   
 
 14. The build process will immediately begin and run through the steps defined in the azure-pipelines.yml file. Your Azure DevOps screen will refresh to show you the build process executing, in real-time. 
 
@@ -869,7 +869,10 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
 
 8. This brings up the task editor and opens a panel with configuration details for the dev stage we created earlier. The configuration items set here will be made available to the tasks in this stage.
 
-9. On this panel, we first need to configure the necessary details to connect the task to Azure for deployment. Let's first start by connecting to our Azure subscription. Select your Azure subscription from the *Azure subscription* dropdown and then choose the **Authorize** button to login and authenticate to the selected subscription.
+9. On this panel, we first need to configure the necessary details to connect the task to Azure for deployment. Let's first start by connecting to our Azure subscription. Select your Azure subscription from the *Azure subscription* dropdown and then choose the click the dropdown option next to **Authorize** button and select **Advanced options**.
+
+    ![Advanced options](images/image12.png)
+    
 
 10. In case a 'Service connection operation failed' dialog pops up, follow the next steps to manually create a service connection. You would also like to follow these steps in case you want to granularly configure permissions for Azure DevOps to a single resource group rather than the entire subscription.
 
