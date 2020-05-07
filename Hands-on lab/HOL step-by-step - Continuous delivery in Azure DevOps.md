@@ -496,7 +496,7 @@ The following steps are very similar to what was done in the previous task with 
 
 ### Task 6: Create the production environment and deploy the template to Azure
 
-The following steps are very similar to what was done in the previous task with the exception that you are now creating the **production** environment. Repeat the above steps from **Task 4**and select to create the **3. production** environment. You can use the same values as used in the dev environment.
+The following steps are very similar to what was done in the previous task with the exception that you are now creating the **production** environment. Repeat the above steps from **Task 4** and select to create the **3. production** environment. You can use the same values as used in the dev environment.
 
 ### Task 7: Review the resource groups
 
