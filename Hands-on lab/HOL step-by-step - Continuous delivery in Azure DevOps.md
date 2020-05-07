@@ -476,7 +476,7 @@ Now that the template file has been uploaded, we'll deploy it several times to c
 
 6.  Next, we're asked to supply an administrator password for the PostgreSQL server and database. This will be the password credential you would need to enter to connect to your newly created database.
 
-    >**Note**: The password must meet complexity requirements of 8 or more characters, must contain upper and lower case characters, must contain at least one number and at least one special character, e.g. "Database2020!"
+    >**Note**: The password must meet complexity requirements of 8 or more characters, must contain upper and lower case characters, must contain at least one number and at least one special character, e.g. **"Database2020!"**
 
     Enter a value for the *administratorLoginPassword* and then press **Enter**.
 
