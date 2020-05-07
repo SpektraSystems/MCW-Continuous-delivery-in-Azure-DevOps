@@ -597,6 +597,8 @@ In this Task, you will configure the Azure DevOps Git repository. You will confi
 
 11. From the success confirmation dialog, select the **Copy to clipboard** button to copy the newly created PAT token to clipboard.
 
+    >**Note**: Copy and save the PAT token in notepad for further reference in the lab
+  
     ![Copying the newly created PAT token to the clipboard](images/stepbystep/media/image135.png "Success confirmation page")
 
 12. In *Azure Cloud Shell*, paste the PAT token and press **Enter**.
@@ -615,6 +617,8 @@ In this Task, you will configure the Azure DevOps Git repository. You will confi
     ```
     git push --set-upstream origin master
     ```
+
+    >**Note**: When it prompt for **Password** then provide the **PAT** token value which you have already saved before in notepad
 
 15. Navigate to the Repos > Files page which shows the files in the repository. You may need to refresh the page to see the updated files. Your source code is now appearing in Azure DevOps.
 
