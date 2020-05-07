@@ -61,6 +61,8 @@ In this lab, you will configure a developer environment and download the require
     
 2.  After log in to **Azure Cloud Shell** select the **Bash** option from the **Welcome to Azure Cloud shell** dialog box and now you will see a **You have no storage mounted box** and click the option for **Show advanced settings**.
 
+    ![bashstorage](images/image1.png)
+
 3.  Select **Create new** under **Storage account** and provide values as below:
  
       - **Storage account** : **storageDeployementid**
