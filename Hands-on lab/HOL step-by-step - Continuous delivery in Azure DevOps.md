@@ -153,14 +153,14 @@ Since this solution is based on Azure Platform-as-a-Service (PaaS) technology, i
     
 3.  Locate the variable block of the **azuredeploy.json** and update with the following codes below:
 
-   ``` 
+    ``` 
     "variables": {
-    "webAppName": "[concat(parameters('siteName'), '-', parameters('environment'), '-', parameters('DeploymentID'))]",
-    "databaseName": "[concat(parameters('siteName'), 'db', parameters('environment'), parameters('DeploymentID'))]",
-    "serverName": "[concat(parameters('siteName'), 'pgserver', parameters('environment'), parameters('DeploymentID'))]",
-    "hostingPlanName": "[concat(parameters('siteName'), 'serviceplan', parameters('DeploymentID'))]"
-  },
-  ```
+      "webAppName": "[concat(parameters('siteName'), '-', parameters('environment'), '-', parameters('DeploymentID'))]",
+      "databaseName": "[concat(parameters('siteName'), 'db', parameters('environment'), parameters('DeploymentID'))]",
+      "serverName": "[concat(parameters('siteName'), 'pgserver', parameters('environment'), parameters('DeploymentID'))]",
+      "hostingPlanName": "[concat(parameters('siteName'), 'serviceplan', parameters('DeploymentID'))]"
+     },
+     ```
 
 ### Task 3: Add a deployment slot for the "staging" version of the site
 
