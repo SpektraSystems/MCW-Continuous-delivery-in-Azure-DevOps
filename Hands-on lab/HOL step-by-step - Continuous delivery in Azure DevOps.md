@@ -25,37 +25,35 @@ Microsoft and the trademarks listed at https://www.microsoft.com/en-us/legal/int
 **Contents**
 <!-- TOC -->
 
-- [Continuous delivery in Azure DevOps hands-on lab step-by-step](#continuous-delivery-in-azure-devops-hands-on-lab-step-by-step)
-  - [Abstract and learning objectives](#abstract-and-learning-objectives)
-  - [Overview](#overview)
-  - [Solution architecture](#solution-architecture)
-  - [Requirements](#requirements)
-  - [Exercise 1: Create an Azure Resource Manager (ARM) template that can provision the web application, PostgreSQL database, and deployment slots in a single automated process](#exercise-1-create-an-azure-resource-manager-arm-template-that-can-provision-the-web-application-postgresql-database-and-deployment-slots-in-a-single-automated-process)
-    - [Task 1: Create an Azure Resource Manager (ARM) template using Azure Cloud Shell](#task-1-create-an-azure-resource-manager-arm-template-using-azure-cloud-shell)
-    - [Task 2: Configure the list of release environments parameters](#task-2-configure-the-list-of-release-environments-parameters)
-    - [Task 3: Add a deployment slot for the "staging" version of the site](#task-3-add-a-deployment-slot-for-the-staging-version-of-the-site)
-    - [Task 4: Create the dev environment and deploy the template to Azure](#task-4-create-the-dev-environment-and-deploy-the-template-to-azure)
-    - [Task 5: Create the test environment and deploy the template to Azure](#task-5-create-the-test-environment-and-deploy-the-template-to-azure)
-    - [Task 6: Create the production environment and deploy the template to Azure](#task-6-create-the-production-environment-and-deploy-the-template-to-azure)
-    - [Task 7: Review the resource groups](#task-7-review-the-resource-groups)
-  - [Exercise 2: Create Azure DevOps project and Git Repository](#exercise-2-create-azure-devops-project-and-git-repository)
-    - [Task 1: Create Azure DevOps Account](#task-1-create-azure-devops-account)
-    - [Task 2: Add the Tailspin Toys source code repository to Azure DevOps](#task-2-add-the-tailspin-toys-source-code-repository-to-azure-devops)
-  - [Exercise 3: Create Azure DevOps build pipeline](#exercise-3-create-azure-devops-build-pipeline)
-    - [Task 1: Create a build pipeline](#task-1-create-a-build-pipeline)
-  - [Exercise 4: Create Azure DevOps release pipeline](#exercise-4-create-azure-devops-release-pipeline)
-    - [Task 1: Create a release definition](#task-1-create-a-release-definition)
-    - [Task 2: Add test and production environments to release pipeline](#task-2-add-test-and-production-environments-to-release-pipeline)
-  - [Exercise 5: Trigger a build and release](#exercise-5-trigger-a-build-and-release)
-    - [Task 1: Manually queue a new build and follow it through the release pipeline](#task-1-manually-queue-a-new-build-and-follow-it-through-the-release-pipeline)
-  - [Exercise 6: Setup a pull request policy, create a task branch and submit a pull request](#exercise-6-setup-a-pull-request-policy-create-a-task-branch-and-submit-a-pull-request)
-    - [Task 1: Set up a pull request policy](#task-1-set-up-a-pull-request-policy)
-    - [Task 2: Create a new branch](#task-2-create-a-new-branch)
-    - [Task 3: Make a code change to the task branch](#task-3-make-a-code-change-to-the-task-branch)
-    - [Task 4: Submit a pull request](#task-4-submit-a-pull-request)
-    - [Task 5: Approve and complete a pull request](#task-5-approve-and-complete-a-pull-request)
-  - [After the hands-on lab](#after-the-hands-on-lab)
-    - [Task 1: Delete resources](#task-1-delete-resources)
+- Continuous delivery in Azure DevOps hands-on lab step-by-step
+  - Abstract and learning objectives
+  - Overview
+  - Solution architecture
+  - Requirements
+  - Exercise 1: Create an Azure Resource Manager (ARM) template that can provision the web application, PostgreSQL database, and deployment slots in a single automated process
+    - Task 1: Create an Azure Resource Manager (ARM) template using Azure Cloud Shell
+    - Task 2: Configure the list of release environments parameters](#task-2-configure-the-list-of-release-environments-parameters)
+    - Task 3: Add a deployment slot for the "staging" version of the site
+    - Task 4: Create the dev environment and deploy the template to Azure
+    - Task 5: Create the test environment and deploy the template to Azure
+    - Task 6: Create the production environment and deploy the template to Azure
+    - Task 7: Review the resource groups
+  - Exercise 2: Create Azure DevOps project and Git Repository
+    - Task 1: Create Azure DevOps Account
+    - Task 2: Add the Tailspin Toys source code repository to Azure DevOps
+  - Exercise 3: Create Azure DevOps build pipeline
+    - Task 1: Create a build pipeline
+  - Exercise 4: Create Azure DevOps release pipeline
+    - Task 1: Create a release definition
+    - Task 2: Add test and production environments to release pipeline
+  - Exercise 5: Trigger a build and release
+    - Task 1: Manually queue a new build and follow it through the release pipeline
+  - Exercise 6: Setup a pull request policy, create a task branch and submit a pull request
+    - Task 1: Set up a pull request policy
+    - Task 2: Create a new branch
+    - Task 3: Make a code change to the task branch
+    - Task 4: Submit a pull request
+    - Task 5: Approve and complete a pull request
 
 <!-- /TOC -->
 
@@ -1244,13 +1242,3 @@ Confirm that the build is green, it is shown on the same page.
 
     ![On the screen, a new build has been automatically triggered.](images/stepbystep/media/image117.png "List of builds")
 
-
-## After the hands-on lab
-
-Duration: 10 Minutes
-
-### Task 1: Delete resources
-
-1.  Now since the hands-on lab is complete, go ahead and delete the resource group you created for the Tailspin Toys deployments along with the Azure DevOps project that were created for this hands-on lab. You will no longer need those resources and it will be beneficial to clean up your Azure Subscription.
-
-These steps should be followed only *after* completing the hands-on lab.
