@@ -879,7 +879,7 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
 
     ![Configure task editor](images/image15.png) 
 
-12. Then from the drop down option of folders select **All pipelines** and then click on **Save** .
+12. Then from the drop down option of folders select **All pipelines** and then click on **OK** .
 
     ![Save](images/image16.png) 
 
