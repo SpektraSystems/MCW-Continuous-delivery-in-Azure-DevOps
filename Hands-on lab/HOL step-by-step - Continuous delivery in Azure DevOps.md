@@ -875,23 +875,25 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
 
     ![Service Connection](images/image13.png)    
 
-11. Now back in the task editor select the recently created Azure service connections in the **Azure subscription option** and from the drop down list of **App service name** select **tailspintoys-dev-xxxx** and click on **Save** button on the top right corner. Then save to the root(\) or to the folder **All pipelines**.
+11. Now back in the task editor select the recently created *Azure service connections* from the **Azure subscription option** and from the drop down list of **App service name** select **tailspintoys-dev-xxxx** and click on **Save** button on the top right corner. 
 
     ![Configure task editor](images/image15.png) 
-    
+
+12. Then from the drop down option of folders select **All pipelines** and then click on **Save** .
+
     ![Save](images/image16.png) 
 
-12. Now, let's configure the task specific details. Select the **Deploy Azure App Service** task to bring up the configuration panel for task.
+13. Now, let's configure the task specific details. Select the **Deploy Azure App Service** task to bring up the configuration panel for task.
 
     ![On the screen, Deploy Azure App Service is highlighted.](images/stepbystep/media/image89d.png "Deploy Azure App Service")
 
-13. In a previous exercise, we created a deployment slot for the web app. Deployment slots are actually live apps with their own hostnames. App content and configuration elements can be swapped between two deployment slots, including the production slot. 
+14. In a previous exercise, we created a deployment slot for the web app. Deployment slots are actually live apps with their own hostnames. App content and configuration elements can be swapped between two deployment slots, including the production slot. 
 
     In the *Azure App Service Deploy* panel, locate the **Deploy to Slot or App Service Environment** checkbox and set it to checked.
 
     ![On the panel, Deploy to slot is highlighted.](images/stepbystep/media/image89e.png "Azure App Service Deploy")
 
-14. The checkbox will trigger the panel to update with additional configuration items. 
+15. The checkbox will trigger the panel to update with additional configuration items. 
 
     In the **Resource group** dropdown, select the appropriate resource group you created in the previous exercise. 
     
@@ -899,13 +901,13 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
 
     ![On the panel, Resource group and Slot are highlighted.](images/stepbystep/media/image89f.png "Deployment slot configuration")
 
-15. Now that we've completed the configuration for the "Deploy Azure App Service" task to deploy our application to Azure App Service deployment slot, we'll need a way to swap the staging slot with the production slot. To do that, we'll need to add an additional task to the dev stage. 
+16. Now that we've completed the configuration for the "Deploy Azure App Service" task to deploy our application to Azure App Service deployment slot, we'll need a way to swap the staging slot with the production slot. To do that, we'll need to add an additional task to the dev stage. 
 
     Select the **+** (plus sign) on the task list to create a new task.
 
     ![On the screen, the plus sign is highlighted.](images/stepbystep/media/image89g.png "Task list")
 
-16. This opens the *Add tasks* panel. 
+17. This opens the *Add tasks* panel. 
 
     Enter **App Service Manage** into the search box and press **Enter**. 
     
@@ -913,17 +915,17 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
 
     ![On the panel, App Service Manage is entered into the search textbox and Azure App Service Manage is highlighted.](images/stepbystep/media/image90.png "Add tasks")
 
-17. After adding the new task, we now have two tasks for the dev stage. The new task now needs to be configured. 
+18. After adding the new task, we now have two tasks for the dev stage. The new task now needs to be configured. 
 
     Select the **Swap Slots:** task to open the task configuration panel.
 
     ![On the screen, the Swap Slots task is highlighted.](images/stepbystep/media/image91.png "Task list")
 
-18. In the *Azure App Service Manage* task panel there are a few configurations we need to set. 
+19. In the *Azure App Service Manage* task panel there are a few configurations we need to set. 
 
     First, locate the *Azure subscription* field and select the same subscription used in the *Deploy Azure App Service* task.
 
-19. Locate the *App Service name* field, select the item that begins with **TailspinToysWeb-dev-** just like in the *Deploy Azure App Service* task. 
+20. Locate the *App Service name* field, select the item that begins with **TailspinToysWeb-dev-** just like in the *Deploy Azure App Service* task. 
 
     In the *Resource Group* field, select **TailspinToysRg**. 
     
@@ -931,7 +933,7 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
 
     ![On the panel, App Service name, Resource group, and Source Slot are all highlighted.](images/stepbystep/media/image92.png "Swap Slots task configuration")
 
-20. Let's wrap up this activity by giving our release pipeline a new name. 
+21. Let's wrap up this activity by giving our release pipeline a new name. 
 
     Choose the existing *New release pipeline* name to begin editing it. 
     
@@ -939,9 +941,9 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
 
     ![On the screen, TailspinToys Release name is highlighted.](images/stepbystep/media/image92a.png "Release pipeline name change")
 
-21. Select **Save** button at the top of the screen and confirm by selecting the **OK** button.
+22. Select **Save** button at the top of the screen and confirm by selecting the **OK** button.
 
-22. Congratulations! You have just created your first release pipeline.
+23. Congratulations! You have just created your first release pipeline.
 
 ### Task 2: Add test and production environments to release pipeline
 
