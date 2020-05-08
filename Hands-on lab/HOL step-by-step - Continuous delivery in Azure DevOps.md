@@ -113,7 +113,7 @@ Since this solution is based on Azure Platform-as-a-Service (PaaS) technology, i
 
 3.  In the open editor window for the **azuredeploy.json**, scroll through the contents of the Azure Resource Manager Template. This template contains all the necessary code to deploy a Web App and a PostgreSQL database to Azure.
 
-    >**Note**: If you would like to use this template in a future deployment of your own, it can be found in the [Azure Quickstart Templates repository on GitHub](https://github.com/Azure/azure-quickstart-templates). This specific file can be found [here](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-webapp-managed-postgresql/azuredeploy.json).
+    >**Note**: If you would like to use this template in a future deployment of your own, it can be found in the Azure Quickstart Templates repository on GitHub. This specific file can be found over https:<span></span>//raw.githubusercontent.com/<span></span>Azure/azure-quickstart-templates/master/101-webapp-managed-postgresql/azuredeploy.json.
 
 ### Task 2: Configure the list of release environments parameters
 
@@ -514,7 +514,7 @@ In this exercise, you will create and configure an Azure DevOps account along wi
 
 ### Task 1: Create Azure DevOps Account
 
-1. Browse to the Azure DevOps site at <https://dev.azure.com>.
+1. Browse to the Azure DevOps site at https:<span></span>//dev.azure.com.
 
 2. If you do not already have an account, select the **Start free** button.
     
@@ -544,7 +544,7 @@ In this Task, you will configure the Azure DevOps Git repository. You will confi
 
     > **Note**: If this folder doesn't exist ensure you followed the instructions in the 'Before the hands-on lab'.
 
-    >**Note**: If you are using the Azure Cloud Shell you will be prompted for credentials when using Git. The best way to authenticate is to use a [personal access token](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate), PAT, with a scope Code, Full permissions. Then use that PAT as password (leave user name empty) when prompted.    
+    >**Note**: If you are using the Azure Cloud Shell you will be prompted for credentials when using Git. The best way to authenticate is to use a personal access token, PAT, with a scope Code, Full permissions. Then use that PAT as password (leave user name empty) when prompted.    
 
 2. Open *Cloud Shell Editor* to this folder by typing: 
    
