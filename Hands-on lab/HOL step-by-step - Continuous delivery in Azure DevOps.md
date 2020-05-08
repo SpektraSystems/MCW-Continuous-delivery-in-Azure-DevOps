@@ -881,94 +881,17 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
     
     ![Save](images/image16.png) 
 
-12. In case a 'Service connection operation failed' dialog pops up, follow the next steps to manually create a service connection. You would also like to follow these steps in case you want to granularly configure permissions for Azure DevOps to a single resource group rather than the entire subscription.
-
-    **If you successfully authorized the Azure Subscription you may skip to step 36.**
-
-    > **Note**: The following workaround steps must be performed by a Global Administrator of the tenant associated to the Azure subscription, or at least an individual who has access to a user account with either of these Azure Active Directory roles: Application administrator, Application developer, Cloud application administrator.
-        
-13. In the Azure Portal, open the **Azure Active Directory** page.
-
-14. In the *Azure Active Directory* page, choose **App registrations**.
-
-15. In the *App registrations* page, choose **+ New registration**.
-
-16. In the *Register an application*, type in a name for the application (e.g. **MCWAzureDevOps**).
-
-17. For *Supported account types*, choose *Accounts in this organizational directory only*.
-
-18. Select the **Register** button.
-
-19. In the application page, note down the **Application (client) ID** - this will be used at a later step in this task and will be referred to as *Application ID*.
-
-20. In the application page, note down the **Directory (tenant) ID** - this will be used at a later step in this task and will be referred to as *Directory ID*.
-
-21. Choose **Certificates & secrets**.
-
-22. In the *Certificates & secrets* page, select **+ New client secret**.
-
-23. In the *Add a client secret* dialog, type in a descriptive description and choose **Never** for the expiration of the secret.
-
-24. Select **Add**.
-
-25. Copy the value of the secret now. This will not be displayed later and will be used at a later step in this task. The secret will be referred to as *Client secret*.
-
-26. In the Azure Portal, open the **TailspinToysRg** resource group.
-
-27. On the left-side of the page, choose **Access control (IAM)**.
-
-28. On the top-menu, choose **+ Add**.
-
-29. From the drop-down menu, choose **Add role assignment**.
-
-30. In the **Add role assignment**, type in the following information:
-
-    - For *Role*, choose **Contributor**
-    - For *Select*, type in the name of the application you previously registered (e.g. *MCWAzureDevOps*)
-
-    ![In the Azure Portal at the Access control (IAM) page, for configuring RBAC permissions for the newly created application registration](images/stepbystep/media/image141.png "Access control (IAM)")
-
-31. Select the application returned from the query and choose **Save**. 
-
-32. In Azure DevOps, in the *Deployment process* parameters, select the **+New** button for the parameter called *Azure subscription*.
-
-    ![In the pipeline editor, the Tasks tab is selected and the deployment process called dev is selected](images/stepbystep/media/image140.png "Service connections")
-
-33. In the *Add an Azure Resource Manager service connection* dialog, type in the following:
-
-    - For *Connection name*, type in a descriptive name which represents the connection your establishing between your Azure DevOps organization and Azure.
-    - For *Environment*, choose **AzureCloud**.
-    - For *Scope level*, choose **Subscription**.
-    - For *Subscription ID*, type in your Azure subscription identifier where the resources were previously created. You may retrieve this information from running the following Azure CLI command in the Azure Cloud Shell editor previously used for provisioning and copying the value of the *id* property:
-
-    ```
-    az account show
-    ```
-
-    - For *Subscription name*, type in the exact name of the Azure subscription. Again, this information can be retrieved by using the same Azure CLI command previously described
-    - For *Service principal client ID*, *Service principal key* and *Tenant ID*, type in the **Client ID**, **Client secret** and **Directory ID** values copied previously.
-
-    ![The Add an Azure Resource Manager service connection dialog](images/stepbystep/media/image142.png "ARM connection dialog")
-
-34. Choose the **Verify connection** button to validate the typed in information.
-
-35. If the verification is successful, choose the **OK** button. The newly added service connection should show up in the *Azure subscription* parameter; otherwise, select the **Refresh** button next to the parameter.
-
-36. Then, in the *App service name field* select the one that begins with **tailspintoys-dev-**.
-
-    ![On the panel, App service name is highlighted.](images/stepbystep/media/image89c.png "Service connections")
-
-37. Now, let's configure the task specific details. Select the **Deploy Azure App Service** task to bring up the configuration panel for task.
+12. Now, let's configure the task specific details. Select the **Deploy Azure App Service** task to bring up the configuration panel for task.
 
     ![On the screen, Deploy Azure App Service is highlighted.](images/stepbystep/media/image89d.png "Deploy Azure App Service")
 
-38. In a previous exercise, we created a deployment slot for the web app. Deployment slots are actually live apps with their own hostnames. App content and configuration elements can be swapped between two deployment slots, including the production slot. 
+13. In a previous exercise, we created a deployment slot for the web app. Deployment slots are actually live apps with their own hostnames. App content and configuration elements can be swapped between two deployment slots, including the production slot. 
 
     In the *Azure App Service Deploy* panel, locate the **Deploy to Slot or App Service Environment** checkbox and set it to checked.
 
     ![On the panel, Deploy to slot is highlighted.](images/stepbystep/media/image89e.png "Azure App Service Deploy")
 
-39. The checkbox will trigger the panel to update with additional configuration items. 
+14. The checkbox will trigger the panel to update with additional configuration items. 
 
     In the **Resource group** dropdown, select the appropriate resource group you created in the previous exercise. 
     
@@ -976,13 +899,13 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
 
     ![On the panel, Resource group and Slot are highlighted.](images/stepbystep/media/image89f.png "Deployment slot configuration")
 
-40. Now that we've completed the configuration for the "Deploy Azure App Service" task to deploy our application to Azure App Service deployment slot, we'll need a way to swap the staging slot with the production slot. To do that, we'll need to add an additional task to the dev stage. 
+15. Now that we've completed the configuration for the "Deploy Azure App Service" task to deploy our application to Azure App Service deployment slot, we'll need a way to swap the staging slot with the production slot. To do that, we'll need to add an additional task to the dev stage. 
 
     Select the **+** (plus sign) on the task list to create a new task.
 
     ![On the screen, the plus sign is highlighted.](images/stepbystep/media/image89g.png "Task list")
 
-41. This opens the *Add tasks* panel. 
+16. This opens the *Add tasks* panel. 
 
     Enter **App Service Manage** into the search box and press **Enter**. 
     
@@ -990,17 +913,17 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
 
     ![On the panel, App Service Manage is entered into the search textbox and Azure App Service Manage is highlighted.](images/stepbystep/media/image90.png "Add tasks")
 
-42. After adding the new task, we now have two tasks for the dev stage. The new task now needs to be configured. 
+17. After adding the new task, we now have two tasks for the dev stage. The new task now needs to be configured. 
 
     Select the **Swap Slots:** task to open the task configuration panel.
 
     ![On the screen, the Swap Slots task is highlighted.](images/stepbystep/media/image91.png "Task list")
 
-43. In the *Azure App Service Manage* task panel there are a few configurations we need to set. 
+18. In the *Azure App Service Manage* task panel there are a few configurations we need to set. 
 
     First, locate the *Azure subscription* field and select the same subscription used in the *Deploy Azure App Service* task.
 
-44. Locate the *App Service name* field, select the item that begins with **TailspinToysWeb-dev-** just like in the *Deploy Azure App Service* task. 
+19. Locate the *App Service name* field, select the item that begins with **TailspinToysWeb-dev-** just like in the *Deploy Azure App Service* task. 
 
     In the *Resource Group* field, select **TailspinToysRg**. 
     
@@ -1008,7 +931,7 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
 
     ![On the panel, App Service name, Resource group, and Source Slot are all highlighted.](images/stepbystep/media/image92.png "Swap Slots task configuration")
 
-45. Let's wrap up this activity by giving our release pipeline a new name. 
+20. Let's wrap up this activity by giving our release pipeline a new name. 
 
     Choose the existing *New release pipeline* name to begin editing it. 
     
@@ -1016,9 +939,9 @@ In this exercise, you will create a release pipeline in Azure DevOps that perfor
 
     ![On the screen, TailspinToys Release name is highlighted.](images/stepbystep/media/image92a.png "Release pipeline name change")
 
-46. Select **Save** button at the top of the screen and confirm by selecting the **OK** button.
+21. Select **Save** button at the top of the screen and confirm by selecting the **OK** button.
 
-47. Congratulations! You have just created your first release pipeline.
+22. Congratulations! You have just created your first release pipeline.
 
 ### Task 2: Add test and production environments to release pipeline
 
