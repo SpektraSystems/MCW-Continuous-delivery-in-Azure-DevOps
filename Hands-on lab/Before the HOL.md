@@ -55,7 +55,11 @@ In this lab, you will configure a developer environment and download the require
 
 >**Note**: This workshop can be completed using only the Azure Cloud Shell.
 
-1.  In a web browser, navigate to https:<span></span>//shell.azure.com. Alternatively, from the Azure web portal, launch the **Azure Cloud Shell**. It has common Azure tools preinstalled and configured to use with your account.
+1.  In a web browser, navigate to https:<span></span>//shell.azure.com. Alternatively, from the Azure web portal and login with below credentials.
+    * Azure Usename/Email: <inject key="AzureAdUserEmail"></inject>
+    * Azure Password: <inject key="AzureAdUserPassword"></inject>
+
+1. Launch the **Azure Cloud Shell**. It has common Azure tools preinstalled and configured to use with your account. 
 
     ![This is a screenshot of an icon used to launch the Azure Cloud Shell from the Azure Portal.](images/Setup/image3.png "Azure Cloud Shell launch icon")
     
