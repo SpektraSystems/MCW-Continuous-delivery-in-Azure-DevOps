@@ -20,7 +20,7 @@ The names of manufacturers, products, or URLs are provided for informational pur
 
 © 2020 Microsoft Corporation. All rights reserved.
 
-Microsoft and the trademarks listed at https://<span></span>w<span></span>ww.<span></span>microshttp://<span></span>oft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
+Microsoft and the trademarks listed at https://<span></span>w<span></span>ww.<span></span>micros<span></span>oft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
 **Contents**
 
@@ -49,7 +49,7 @@ In this lab, you will configure a developer environment and download the require
 
 ### Prerequisites
 
--   Microsoft Azure subscription <http://azure.microsoft.com/en-us/pricing/free-trial/>
+-   Microsoft Azure subscription http:<span></span>//azure.microsoft.com/en-us/pricing/free-trial
 
 ### Task 1: Use Azure Shell as your development environment
 
