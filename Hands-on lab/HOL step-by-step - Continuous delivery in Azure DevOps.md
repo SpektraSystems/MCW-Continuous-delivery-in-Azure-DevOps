@@ -184,7 +184,7 @@ Since this solution is based on Azure Platform-as-a-Service (PaaS) technology, i
 
     After adding the code, it will look like this:
 
-    Save the file.
+    Save the file using **Ctrl+S**
 
     ![This is a screenshot of the code pasted just below the element for the application insights extension in the "resources" array.](images/stepbystep/media/image39.png "Pasted block of JSON code")
 
