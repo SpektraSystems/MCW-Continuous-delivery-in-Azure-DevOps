@@ -1142,7 +1142,7 @@ Typically, the next few steps would be performed by another team member. This wo
 1.  After submitting the pull request, you are presented with Pull Request review screen. Let's assume all the changes made were acceptable to the review team.
 Confirm that the build is green, it is shown on the same page. 
 
-    >**Note**: If the build is not green, you cannot merge the Pull Request as in step 2-4 below. You are then blocked. If you chose the **Check for linked work items** policy in task 1, you will be blocked until you create and attach a work item to your pull request. You can create a new work item by selecting **Boards** and then **Work items**. Then navigate back here and you can choose the new work item from the dropdown on the right side of the page.
+    >**Note**: If the build is not green, you cannot merge the Pull Request as in step 2-4 below. You are then blocked. If you chose the **Check for linked work items** policy in task 1, you will be blocked until you create and attach a work item to your pull request. You can create a new work item by selecting **Boards** and then **Work items** and then click on **+ New Work Item**. From the drop down list select **Task** and then **Enter the Title** for the work item that is to be created and then click on **Save**. Then navigate back here to **Pull Request** page and you can choose the new work item from the dropdown on the right side of the page.
 
 1. First, select the **Approve** button to approve of the code that was modified submitted as part of the pull request.
 
